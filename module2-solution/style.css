@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif, arial;
+	margin: 0px;
+}
+h1{
+	font-size: 175%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+section{
+	width: 100%
+}
+div{
+	background-color: #00FFFF;
+	height: 200px;
+	margin: 30px;
+	border:3px solid black;
+	overflow: hidden;
+
+}
+p.title{
+	float: right;
+	border: 1px solid black;
+	font-size: 25px;
+	text-align: center;
+	border-top: 3px;
+	border-right: 3px;
+	margin:0px;
+}
+p.content{
+	clear: both;
+	padding: 10px;
+
+}
+#title1{
+	background-color: #FFF7A8;
+}
+#title2{
+	background-color: #DEB887;
+}
+#title3{
+	background-color: #5F9EA0;
+}
+
+/*********Dextop View*************/
+@media (min-width: 992px) {
+	.sec1, .sec2, .sec3{
+		float: left;
+		width: 33.33%;
+	}
+	#div1 {
+		margin-left: 15px;
+	}
+	#div2{
+		margin-left: 10px;
+		margin-right: 15px;
+		
+	}
+	#div3{
+		margin-left: 15px;
+
+
+	}
+}
+
+/**********Tablet view*************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.sec1, .sec2 {
+		float:left;
+		width: 50%;
+	}
+	#div1{
+		margin-right: 15px;
+	}
+	#div2{
+		margin-left: 15px;
+	}
+	#div3{
+		margin-top: 0px;
+	}
+}
+
